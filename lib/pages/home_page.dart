@@ -8,7 +8,7 @@ class Homepage extends StatelessWidget {
    final  String str = "learning flutter";
     return Scaffold(
       appBar: AppBar(title: Text("Catelog"),
-      centerTitle: true),
+      centerTitle: true,),
         body: Center(
           child: Container(
             child: Text("Welcome Kunal $days $str"),
