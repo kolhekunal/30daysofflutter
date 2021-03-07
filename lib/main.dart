@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catelog/Utils/MyRoutes.dart';
 import 'package:flutter_catelog/pages/login_page.dart';
-import 'package:flutter_catelog/pages/theme.dart';
+import 'file:///C:/Users/diaspark/FlutterProject/flutter_catelog/lib/widgets/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'pages/home_page.dart';
