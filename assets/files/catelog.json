@@ -1,0 +1,67 @@
+{
+	"products": [{
+			"id": 1,
+			"name": "iPhone",
+			"desc": "This is a iPhone 11",
+			"price": "100000",
+			"color": "#de5d8a",
+			"image": "https://minpex.com/wp-content/uploads/2020/06/iPhone11-Purple-1-150x150.jpg"
+		},
+		{
+			"id": 2,
+			"name": "AAAAAAA",
+			"desc": "This is a AAAAAAA",
+			"price": "10",
+			"color": "#de5d67",
+			"image": "https://via.placeholder.com/600/771796"
+		},
+		{
+			"id": 3,
+			"name": "BBBBBB",
+			"desc": "This is a BBBBBB",
+			"price": "100",
+			"color": "#de5d9b",
+			"image": "https://via.placeholder.com/600/24f355"
+		},
+		{
+			"id": 4,
+			"name": "CCCCCC",
+			"desc": "This is a CCCCCC",
+			"price": "1000",
+			"color": "#rt5d8a",
+			"image": "https://via.placeholder.com/600/f66b97"
+		},
+		{
+			"id": 5,
+			"name": "DDDDDDD",
+			"desc": "This is a DDDDDDD",
+			"price": "10000",
+			"color": "#de6d8a",
+			"image": "https://via.placeholder.com/600/56a8c2"
+		},
+		{
+			"id": 6,
+			"name": "EEEEEE",
+			"desc": "This is a EEEEEE",
+			"price": "500",
+			"color": "#de9u7a",
+			"image": "https://minpex.com/wp-content/uploads/2020/06/iPhone11-Purple-1-150x150.jpg"
+		},
+		{
+			"id": 7,
+			"name": "FFFFFFF",
+			"desc": "This is a FFFFFFF",
+			"price": "600",
+			"color": "#de5b8a",
+			"image": "https://minpex.com/wp-content/uploads/2020/06/iPhone11-Purple-1-150x150.jpg"
+		},
+		{
+			"id": 8,
+			"name": "GGGGGGG",
+			"desc": "This is a GGGGGGG",
+			"price": "700",
+			"color": "#bf5d8a",
+			"image": "https://via.placeholder.com/600/b0f7cc"
+		}
+	]
+}
