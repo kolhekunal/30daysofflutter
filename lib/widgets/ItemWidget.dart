@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catelog/model/catelog.dart';
+import 'package:flutter_catelog/model/Product.dart';
+
 
 class ItemWidget extends StatelessWidget {
-  final Item item;
+  final Product item;
   const ItemWidget({Key key, @required this.item}) : assert(item != null),    super(key: key);
 
   @override
