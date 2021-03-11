@@ -3,7 +3,9 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_catelog/Utils/MyRoutes.dart';
 import 'package:flutter_catelog/model/Product.dart';
+import 'package:flutter_catelog/pages/cart_page.dart';
 import 'package:flutter_catelog/widgets/home_widget/Home_CategoryList.dart';
 import 'package:flutter_catelog/widgets/home_widget/Home_Header.dart';
 import 'package:flutter_catelog/widgets/theme.dart';
@@ -29,6 +31,10 @@ class _HomepageState extends State<Homepage> {
    final  String str = "learning flutter";
     return Scaffold(
       backgroundColor: MyTheme.creamColor,
+      floatingActionButton: FloatingActionButton(onPressed: ()
+      {Navigator.pushNamed(context, MyRoutes.cartRoute);},
+        backgroundColor: MyTheme.darkBluish,
+      child: Icon(CupertinoIcons.cart),),
     body: SafeArea(
       child: Container(
         padding: Vx.m32,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catelog/Utils/MyRoutes.dart';
+import 'package:flutter_catelog/pages/cart_page.dart';
 import 'package:flutter_catelog/pages/login_page.dart';
 import 'file:///C:/Users/diaspark/FlutterProject/flutter_catelog/lib/widgets/theme.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
       "/" : (context) => LoginPage(),
       MyRoutes.loginRoute : (context) => LoginPage(),
-      MyRoutes.homeRoute : (context) => Homepage()
+      MyRoutes.homeRoute : (context) => Homepage(),
+      MyRoutes.cartRoute : (context) => CartPage()
       },
     );
   }

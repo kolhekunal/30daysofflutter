@@ -10,25 +10,25 @@ class HomeDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyTheme.creamColor,
-      appBar: AppBar(),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: MyTheme.creamColor,
         child: ButtonBar(
-
           buttonPadding: EdgeInsets.zero,
           alignment: MainAxisAlignment.spaceBetween,
           children: [
             "\$${productItem.price}".text.black.bold.xl4.make(),
-            ElevatedButton(onPressed: (){}, child: "Buy".text.make(),
+            ElevatedButton(onPressed: (){}, child: "Add to cart".text.make(),
               style: ButtonStyle(backgroundColor: MaterialStateProperty.all(MyTheme.darkBluish)),
-            ).wh(100, 40)
-
+            ).wh(120, 40)
           ],
-
         ).p16(),
       ),
       body: SafeArea(
+
         child: Column(
           children: [
             Hero(tag: Key(productItem.id.toString()),
@@ -45,9 +45,13 @@ Expanded(
             productItem.name.text.xl4.color(MyTheme.darkBluish).bold.make(),
             productItem.desc.text.xl.textStyle(context.captionStyle).make(),
             10.heightBox,
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+                "when an unknown printer took a galley.".text.make().p16()
+
           ],
         ).py64(),
-  color: Colors.white,
+  color: MyTheme.creamColor,
 ),
     ))
 
