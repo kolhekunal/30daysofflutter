@@ -27,7 +27,7 @@
 			"id": 4,
 			"name": "CCCCCC",
 			"desc": "This is a CCCCCC",
-			"price": "1000",
+			"price": "100",
 			"color": "#rt5d8a",
 			"image": "https://i.pinimg.com/originals/db/53/fc/db53fca3d4739f19b8d43fef054f6577.jpg"
 		},
@@ -35,7 +35,7 @@
 			"id": 5,
 			"name": "DDDDDDD",
 			"desc": "This is a DDDDDDD",
-			"price": "10000",
+			"price": "100",
 			"color": "#de6d8a",
 			"image": "https://th.bing.com/th/id/R9bcb2b8cc8dea3240eff85d1a0e7ea10?rik=rdg1ZqwCPIJHcg&riu=http%3a%2f%2fwww.sammobile.com%2fwp-content%2fuploads%2f2016%2f04%2fvirgin-mobile-galaxy-j7.jpg&ehk=I2KOXSe5KKRdsWLM0EbO4mmhSFQg4g8cffclUCST1Lc%3d&risl=&pid=ImgRaw"
 		},

@@ -2,6 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_catelog/Utils/MyRoutes.dart';
+import 'package:flutter_catelog/widgets/theme.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -32,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: Colors.white,
+        color: context.canvasColor,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -43,7 +45,6 @@ class _LoginPageState extends State<LoginPage> {
               Text(
                 "Welcome $txt",
                 style: TextStyle(
-                    color: Colors.green,
                     fontSize: 20,
                     fontWeight: FontWeight.bold),
               ),
@@ -106,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                               fontWeight: FontWeight.bold,
                               fontSize: 16),),
                           decoration: BoxDecoration(
-                            color: Colors.deepPurple,
+                            color: context.theme.buttonColor,
                             borderRadius: BorderRadius.circular(changeButton?50:8)),
                         ),
                       )

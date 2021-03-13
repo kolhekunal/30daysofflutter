@@ -30,14 +30,14 @@ class _HomepageState extends State<Homepage> {
 
    final  String str = "learning flutter";
     return Scaffold(
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(onPressed: ()
       {Navigator.pushNamed(context, MyRoutes.cartRoute);},
-        backgroundColor: MyTheme.darkBluish,
-      child: Icon(CupertinoIcons.cart),),
+        backgroundColor: context.theme.buttonColor,
+      child: Icon(CupertinoIcons.cart,color: Colors.white,),),
     body: SafeArea(
       child: Container(
-        padding: Vx.m32,
+        padding: Vx.m16,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

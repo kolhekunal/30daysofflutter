@@ -10,17 +10,17 @@ class HomeDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: context.theme.canvasColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
       ),
       bottomNavigationBar: Container(
-        color: MyTheme.creamColor,
+        color: context.theme.cardColor,
         child: ButtonBar(
           buttonPadding: EdgeInsets.zero,
           alignment: MainAxisAlignment.spaceBetween,
           children: [
-            "\$${productItem.price}".text.black.bold.xl4.make(),
+            "\$${productItem.price}".text.color(context.theme.accentColor).bold.xl4.make(),
             ElevatedButton(onPressed: (){}, child: "Add to cart".text.make(),
               style: ButtonStyle(backgroundColor: MaterialStateProperty.all(MyTheme.darkBluish)),
             ).wh(120, 40)
@@ -42,16 +42,15 @@ Expanded(
         width: context.screenWidth,
         child: Column(
           children: [
-            productItem.name.text.xl4.color(MyTheme.darkBluish).bold.make(),
+            productItem.name.text.xl4.color(context.theme.accentColor).bold.make(),
             productItem.desc.text.xl.textStyle(context.captionStyle).make(),
             10.heightBox,
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-                "when an unknown printer took a galley.".text.make().p16()
+                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.".text.make().p16()
 
           ],
-        ).py64(),
-  color: MyTheme.creamColor,
+        ).py32(),
+  color: context.theme.cardColor,
 ),
     ))
 

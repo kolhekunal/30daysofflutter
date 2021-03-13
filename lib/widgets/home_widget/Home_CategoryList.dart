@@ -41,7 +41,7 @@ class CatelogItem extends StatelessWidget {
             descDetails(productItem: productItem),
           ],
         )
-    ).white.roundedSM.square(120).make().py16();
+    ).color(context.theme.cardColor).roundedSM.square(120).make().py16();
   }
 }
 class productImage extends StatelessWidget {
@@ -50,7 +50,7 @@ class productImage extends StatelessWidget {
   const productImage({Key key, @required this.imageItem}) : assert(imageItem!=null) ,super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Image.network(imageItem).box.roundedSM.p16.color(MyTheme.creamColor).make().p16().w40(context);
+    return Image.network(imageItem).box.roundedSM.p16.color(context.theme.canvasColor).make().p16().w40(context);
   }
 }
 class descDetails extends StatelessWidget {
@@ -63,7 +63,7 @@ class descDetails extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        productItem.name.text.lg.color(MyTheme.darkBluish).bold.make(),
+        productItem.name.text.lg.color(context.theme.accentColor).bold.make(),
         productItem.desc.text.textStyle(context.captionStyle).make(),
         10.heightBox,
         ButtonBar(
@@ -72,10 +72,11 @@ class descDetails extends StatelessWidget {
           children: [
             "\$${productItem.price}".text.bold.xl.make(),
             ElevatedButton(onPressed: (){}, child: "Add to cart".text.make(),
-              style: ButtonStyle(backgroundColor: MaterialStateProperty.all(MyTheme.darkBluish)),
+              style: ButtonStyle(backgroundColor: MaterialStateProperty.
+              all(context.theme.buttonColor),
             )
 
-          ],
+            )],
 
         ).pOnly(right: 8)
 
