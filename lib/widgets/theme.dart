@@ -16,14 +16,17 @@ import 'package:velocity_x/velocity_x.dart';
 
   static ThemeData darkTheme (BuildContext context) => ThemeData(
     brightness: Brightness.dark,
+      primaryColor: Colors.lightBlue[800],
       fontFamily: GoogleFonts.poppins().fontFamily,
       cardColor:Colors.black,
       canvasColor: darkcreamColor,
       buttonColor: lightBluish,
       accentColor: Colors.white,
-      appBarTheme: AppBarTheme(color: Colors.white,elevation: 0,
+      appBarTheme: AppBarTheme(elevation: 0,
           iconTheme: IconThemeData(color: Colors.white),
-          textTheme: Theme.of(context).textTheme)
+          textTheme: Theme.of(context).textTheme.copyWith(headline6: context.textTheme.headline6.copyWith(color: Colors.white)),
+        ),
+        //  textTheme: Theme.of(context).textTheme.copyWith(headline6: context.textTheme.headline6.copyWith(color: Colors.white))
      );
 
   //Color
